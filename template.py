@@ -1,5 +1,5 @@
-inputFile = open('input.txt', 'r')
-lines = inputFile.readlines()
+with open('input.txt', 'r') as inputFile:
+    lines = [line.strip() for line in inputFile]
 
 def part_one():
     pass
