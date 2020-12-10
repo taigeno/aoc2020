@@ -48,7 +48,7 @@ def valid_key(kvpair):
         else:
             return False
     elif key == 'ecl':
-        return value in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
+        return re.match(r'^(amb|blu|brn|gry|grn|hzl|oth)$', value) != None
     elif key == 'hcl':
         return re.match(r'#[0-9a-f]{6}', value) != None
     elif key == 'pid':

@@ -21,5 +21,5 @@ def part_two():
             valid_count += 1
     print(valid_count)
 
-#part_one()
+part_one()
 part_two()
