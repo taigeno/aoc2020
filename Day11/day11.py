@@ -1,5 +1,6 @@
 import copy
 from collections import Counter
+import time
 
 with open('input.txt', 'r') as inputFile:
     layout = [list(line.strip()) for line in inputFile]
@@ -68,10 +69,16 @@ def run_sym(extended):
     print(items['#'])
 
 def part_one():
+    start = time.time()
     run_sym(False)
+    end = time.time()
+    print(end - start)
     
 def part_two():
+    start = time.time()
     run_sym(True)
+    end = time.time()
+    print(end - start)
 
 part_one()
 part_two()
