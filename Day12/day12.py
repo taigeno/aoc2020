@@ -62,11 +62,8 @@ def part_two():
             waypoint[0] -= value
         elif action == 'R':
             waypoint[0], waypoint[1] = rotate(waypoint, value, -1)
-            #face = (face - value/90 + 4)%4
-            pass
         elif action == 'L':
             waypoint[0], waypoint[1] = rotate(waypoint, value, 1)
-            pass
         elif action == 'F':
             east += value * waypoint[0]
             north += value * waypoint[1]
